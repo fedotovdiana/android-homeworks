@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">homeworks</string>
+    <string name="equals_button_text">=</string>
+    <string name="number_two_button_text">2</string>
+    <string name="sun_button_text">+</string>
+    <string name="number_one_button_text">1</string>
+    <string name="factorial_button_text">n!</string>
+    <string name="tan_button_text">tan</string>
+    <string name="cos_button_text">cos</string>
+    <string name="sin_button_text">sin</string>
 </resources>

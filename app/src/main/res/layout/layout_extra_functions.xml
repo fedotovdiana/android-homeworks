@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/sinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/sin_button_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cosButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/cos_button_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tanButton"
+        app:layout_constraintStart_toEndOf="@id/sinButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/tan_button_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/factorialButton"
+        app:layout_constraintStart_toEndOf="@id/cosButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/factorialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/factorial_button_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tanButton"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

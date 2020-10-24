@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="end"
+        android:paddingHorizontal="16dp"
+        android:text="5 665"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/edgeView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include layout="@layout/view_edge" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/extraFunctionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/inputLayout"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintVertical_weight="0.2">
+
+        <include layout="@layout/layout_extra_functions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/extraFunctionsLayout"
+        app:layout_constraintVertical_weight="0.8">
+
+        <include layout="@layout/layout_input" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="500dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>
