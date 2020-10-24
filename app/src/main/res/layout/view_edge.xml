@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:id="@+id/edgeView"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@id/extraFunctionsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/purple_500" />
+    </FrameLayout>
+
+</merge>
