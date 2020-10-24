@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">homeworks</string>
+    <string name="show_hide_button_text">show/hide</string>
 </resources>
